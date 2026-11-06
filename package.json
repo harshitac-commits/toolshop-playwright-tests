@@ -1,0 +1,23 @@
+{
+  "name": "toolshop-playwright-tests",
+  "version": "1.0.0",
+  "description": "Writing playwright tests for my project",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshitac-commits/toolshop-playwright-tests.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harshitac-commits/toolshop-playwright-tests/issues"
+  },
+  "homepage": "https://github.com/harshitac-commits/toolshop-playwright-tests#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^26.6.6"
+  }
+}
