@@ -21,3 +21,11 @@ test('login fails with an unregistered user', async({page})=>{
     await page.getByRole('button', {name: 'Login'}).click();
     await expect(page.getByTestId('login-error')).toHaveText('Invalid email or password');
 });
+
+test('login fails with blank password', async({page})=>{
+    await page.goto('https://practicesoftwaretesting.com/auth/login');
+    await page.getByLabel('Email address').fill('not-reg@example.com');
+    await page.getByRole('button', {name: 'Login'}).click();
+    await expect(page.getByText('Password is required'));
+
+});
